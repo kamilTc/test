@@ -10,6 +10,9 @@ jobs:
       name: github-pages
       url: $0
     runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: read
     steps:
     - id: build-publish
       uses: bitovi/github-actions-react-to-ghp@v1.2.0
